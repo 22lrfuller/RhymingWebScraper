@@ -64,4 +64,3 @@ def rhymeScrape(word, output):
 		print(newElems[x][1].center(longWord, ' ') + "|")
 
 	print("-------------" + "-" * (longWord + 1))
-	return None
