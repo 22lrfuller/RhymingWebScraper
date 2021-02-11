@@ -5,12 +5,11 @@ import requests
 from bs4 import BeautifulSoup
 from WordFrequency import freqData
 
-def rhymeScrape(word, output):
+def rhymeScrape(output):
 	newElems = []
 
-	if (word == None):
-		# Taking a word and searching it on the website.
-		word = input("Enter a Word: ")
+	# Taking a word and searching it on the website.
+	word = input("Enter a Word: ")
 
 	URL = 'https://www.rhymezone.com/r/rhyme.cgi?Word=' + word + '&typeofrhyme=perfect&org1=syl&org2=l&org3=y'
 	results = BeautifulSoup(requests.get(URL).content, 'html.parser')

@@ -2,10 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-def lyricScrape(song, output):
-	if (song == None):
-		# Searching the song on the website and getting the conents of the page
-		song = input("Enter the song name: ")
+def lyricScrape(output):
+	# Searching the song on the website and getting the conents of the page
+	song = input("Enter the song name: ")
 
 	song = song.replace(" ", "+")
 	URL = 'https://search.azlyrics.com/search.php?q=' + song

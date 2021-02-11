@@ -31,7 +31,14 @@ def rapPoS(song):
 				while ("" in lyrics[x]):
 					lyrics[x] = lyrics[x].remove("");
 
+<<<<<<< Updated upstream
 			for x in lyrics:
 				print(x)
 
 rapPoS("hop off a jet")
+=======
+			# openFile = open(filename)
+			continue
+		else:
+			continue
+>>>>>>> Stashed changes
